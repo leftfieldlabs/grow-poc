@@ -1,0 +1,52 @@
+{% set globals=g.yaml("/content/globals.yaml")%}
+
+<!DOCTYPE html>
+<html lang="{{doc.locale}}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta
+      name="viewport"
+      content="width=device-width,
+        initial-scale=1.0,
+        maximum-scale=1.0,
+        user-scalable=0,
+        height=device-height">
+    <title>
+      {{podspec.title}}
+    </title>
+    <meta
+      property="og:title"
+      content="{% if doc.title %}{{doc.title}} – {% endif %}{{podspec.title}}">
+    <meta property="og:site_name" content="{{podspec.title}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{podspec.meta.base_url}}">
+    {% if doc.description %}
+    <meta name="description" content="{{doc.description}}">
+    <meta property="og:description" content="{{doc.description}}">
+    {% endif %}
+    <meta property="og:image" content="{{podspec.meta.social_url}}" />
+    <link
+      rel="stylesheet"
+      href="{{g.static('/dist/css/main.min.css').url.path}}">
+  </head>
+  <body>
+    {% include "/views/partials/_header.html" %}
+    <div>
+      {% block main %}
+      {% endblock %}
+    </div>
+    {% include "/views/partials/_footer.html" %}
+    <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+    <script
+      src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js"
+      async>
+    </script>
+    <script src="{{g.static('/dist/js/main.min.js').url.path}}"></script>
+    <script>
+      var gaTracker = new gweb.analytics.AutoTrack(
+        {profile: '{{podspec.meta.google_analytics_id}}'}
+      );
+    </script>
+  </body>
+</html>

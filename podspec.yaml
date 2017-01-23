@@ -1,0 +1,40 @@
+grow_version: ">=0.0.67"
+home: /content/pages/home.yaml
+root: ""
+
+localization:
+  default_locale: en
+  locales:
+    - en_US
+    - es_MX
+
+title@: Your Project Title
+meta:
+  google_analytics_id: "UA-XXXXXXXX-X"
+
+static_dirs:
+- static_dir: /dist/
+  serve_at: /assets/static/
+  fingerprinted: true
+- static_dir: /source/images/
+  serve_at: /assets/static/images/
+  fingerprinted: true
+
+sitemap:
+  enabled: true
+
+preprocessors:
+- kind: gulp
+  build_task: "build"
+  run_task: "dev"
+
+# update for whatever instance you create for staging - let us know if you need
+# additional information for prod instances or setting up webreview.
+# deployments:
+#   webreview:
+#     destination: webreview
+#     server: googwebreview.appspot.com
+#     project: hw/connect
+#     name: connect-dev
+#     env:
+#       name: dev

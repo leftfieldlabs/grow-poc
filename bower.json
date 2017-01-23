@@ -1,0 +1,8 @@
+{
+  "name": "connect",
+  "private": true,
+  "dependencies": {
+    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-20150315.zip",
+    "closure-library": "git://github.com/google/closure-library.git#acd8b55353d20ec2a7bae40b1206fdf19ee94039"
+  }
+}

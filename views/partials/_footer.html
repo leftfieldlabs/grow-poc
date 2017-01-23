@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="language-select-container">
+    <label>
+      <select class="language-select-options" onchange="var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};">
+        {% for locale in doc.locales %}
+            {% with localized_doc = g.doc(doc.pod_path, locale=locale) %}
+            <option value="{% if env.name != 'dev' and locale == podspec.default_locale %}/intl/{{locale.language.lower()}}_{{locale.territory.lower()}}{% endif %}{{localized_doc.url.path}}"
+            {%- if localized_doc.locale == doc.locale %} selected{% endif %}>
+              {{locale.get_territory_name()}} - {{locale.get_language_name()}}
+            </option>
+            {% endwith %}
+         {% endfor %}
+      </select>
+    </label>
+  </div>
+</div>

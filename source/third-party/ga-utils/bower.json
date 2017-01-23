@@ -1,0 +1,25 @@
+{
+  "name": "ga-utils",
+  "authors": [
+    "Danny Grove <groved@google.com>"
+  ],
+  "description": "Google Analytics Utilities",
+  "main": "src/base.js",
+  "keywords": [
+    "google",
+    "analytics",
+    "ga",
+    "utilties",
+    "ga"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
