@@ -1,6 +1,6 @@
 # Project name
 
-<Project Name> is a static site to <do things>.
+This is a Grow SDK proof of concept specifically illustrating how Grow handles translations.
 
 ## Prerequisites
 
@@ -18,6 +18,13 @@ curl https://install.growsdk.org | bash
 ## Running the development server
 
 Prior to starting the development server, you may have to install dependencies used by your project. The `grow install` command walks you through this and tries to set up your environment for you.
+
+Make sure the required dependencies are installed:
+
+```
+bower install
+npm install
+```
 
 The `grow run` command starts your development server. You can make changes to your project files and refresh to see them reflected immediately.
 
@@ -40,4 +47,30 @@ Once you are ready to share your changes with your team, you can stage your work
 
 ```
 grow stage
+```
+
+## Localization
+
+Any content within the yaml files you'd like to be tagged for translation needs the key to be followed by `@`. For example:
+
+```
+headline@: Headline that will be translated
+```
+
+When referencing that content in the HTML, it needs to be appropriately tagged for translation (if the content isn't wrapped with the `_()`, it will not be translated):
+
+```
+{{_(doc.headline)}}
+```
+
+To extract strings tagged for translation:
+
+```
+grow extract
+```
+
+To import translations:
+
+```
+grow import_translations --locale=LOCALE --source /path/to/source/messages.po
 ```
