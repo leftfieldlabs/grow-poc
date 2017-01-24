@@ -1,18 +1,46 @@
-# Project name
+# Grow Localization POC and Process Workflow
 
-This is a Grow SDK proof of concept specifically illustrating how Grow handles translations.
+This is a Grow SDK proof of concept specifically illustrating how Grow handles localization.
+
 
 ## Prerequisites
 
 At a minimum, you will need the following tools installed:
 
-1. [Git](http://git-scm.com/)
+1. [Git](http://git-scm.com)
 2. [Grow](https://grow.io)
+3. [Homebrew](http://brew.sh)
+4. [Node.js](https://nodejs.org)  
+  
+### Git install
+If Git isn't already installed on your system, you may visit:  
+[Git download page](https://git-scm.com/download)
 
-If you do not have Grow, you can install it using:
 
+### Homebrew
+Homebrew is a package manager for macOS. We'll use it to install Node.js and keep it up to date. Please enter the following in the terminal:
+
+```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+
+### Node.js install
+We use Node.js to run various project build tasks, install dependencies, and supplemental utilities. You may install Node.js by downloading an installer or by using a binaries to compile it yourself. Visit their download page and choose your preferred method or simply install using Homebrew:  
+
+#### Method 1: Homebrew (leave off -g if you do not want to install globally)
+```brew install node -g```  
+  
+#### Method 2: Installer or by using a binaries
+[Node.js download page](https://nodejs.org/en/download)
+
+
+#### Grow install
+We use Grow to generate static web pages based on the built in [templating engine](https://grow.io/docs/templates/) and configuration files (such as YAML). Grow also provides a convenient localization solution at it's core. To install Grow, you can install by entering the following into your terminal:
 ```
 curl https://install.growsdk.org | bash
+```
+
+Or by using:
+```
+pip install grow
 ```
 
 ## Running the development server
