@@ -1,3 +1,5 @@
+[![Left Field Labs website](http://www.leftfieldlabs.com/assets/images/logo-main-inverted.png)](http://www.leftfieldlabs.com)
+
 # Grow Localization POC and Process Workflow
 
 This is a Grow SDK proof of concept specifically illustrating how Grow handles localization.
