@@ -12,9 +12,6 @@
         maximum-scale=1.0,
         user-scalable=0,
         height=device-height">
-    <title>
-      {{podspec.title}}
-    </title>
     <meta
       property="og:title"
       content="{% if doc.title %}{{doc.title}} – {% endif %}{{podspec.title}}">
@@ -26,6 +23,9 @@
     <meta property="og:description" content="{{doc.description}}">
     {% endif %}
     <meta property="og:image" content="{{podspec.meta.social_url}}" />
+    <title>
+      {{podspec.title}}
+    </title>
     <link
       rel="stylesheet"
       href="{{g.static('/dist/css/main.min.css').url.path}}">

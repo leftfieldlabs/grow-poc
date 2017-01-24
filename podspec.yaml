@@ -6,11 +6,7 @@ localization:
   default_locale: en
   locales:
     - en_US
-    - es_MX
-
-title@: Your Project Title
-meta:
-  google_analytics_id: "UA-XXXXXXXX-X"
+    - es_ES
 
 static_dirs:
 - static_dir: /dist/
