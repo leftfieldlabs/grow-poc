@@ -2,4 +2,4 @@ view: /views/base.html
 path: /{root}/{base}/
 
 localization:
-  path: /intl/{locale}/{base}/
+  path: /intl/{locale}/{root}/{base}/
