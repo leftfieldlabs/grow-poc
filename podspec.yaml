@@ -1,5 +1,5 @@
 grow_version: ">=0.0.67"
-home: /content/pages/about.yaml
+home: /content/pages/home.yaml
 root: ""
 
 localization:
@@ -7,10 +7,14 @@ localization:
   locales:
     - en_US
     - es_MX
+    - es_ES
 
-title@: Your Project Title
+# [OVERIDING] in favor of: content/globals.yaml
+# title@: Your Project Title
+
 meta:
   google_analytics_id: "UA-XXXXXXXX-X"
+  social_url: http://www.leftfieldlabs.com/assets/images/logo-main-inverted.png
 
 static_dirs:
 - static_dir: /dist/

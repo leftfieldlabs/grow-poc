@@ -14,17 +14,26 @@
         height=device-height">
     <meta
       property="og:title"
-      content="{% if doc.title %}{{doc.title}} – {% endif %}{{podspec.title}}">
+      content="{% if globals.title %}{{globals.title}}{% endif %}">
+    {% if doc.meta.description %}
+    <meta name="description" content="{{doc.meta.description}}">
+    {% endif %}
+    <meta name="keywords" content="{{doc.meta.keywords}}">
+    <meta name="author" content="{{doc.meta.author}}">
+    <meta name="copyright" content="{{doc.meta.copyright}}">
     <meta property="og:site_name" content="{{podspec.title}}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{podspec.meta.base_url}}">
-    {% if doc.description %}
-    <meta name="description" content="{{doc.description}}">
-    <meta property="og:description" content="{{doc.description}}">
+    {% if doc.meta.description %}
+    <meta property="og:description" content="{{doc.meta.description}}">
     {% endif %}
     <meta property="og:image" content="{{podspec.meta.social_url}}" />
     <title>
-      {{podspec.title}}
+      {% if doc.title %}
+        {{doc.title}}
+      {% else %}
+        {{globals.title}}
+      {% endif %}
     </title>
     <link
       rel="stylesheet"

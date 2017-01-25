@@ -1,6 +1,6 @@
-$title: Grow Localization POC and Process Workflow
+title@: Grow Localization POC and Process Workflow
 
-$meta:
+meta@:
   description: This example documents the toolchain Left Field Labs used to develop static websites and microsites. We've included methods that implement templating (both pages and partials), localization, content collections, blueprints, and documents.
   keywords: left field labs, partnership support, grow, localization, translations, templates, declarative file-based microsite generator, static website, statisc microsite, flexible localization, YAML, front matter, markdown, Python-Markdown
   author: Left Field Labs
