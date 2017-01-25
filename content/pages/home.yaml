@@ -1,10 +1,11 @@
 $title@: Home page
 $path: /{root}/
 $view: /views/pages/home.html
-description@: Home page description
+$description@: Home page description
 
 $localization:
    path: /intl/{locale}/
+  default_locale: en_US
 
 headline@: Hello, World!
 subheadline@: We hope you enjoy this example of the Grow SDK.

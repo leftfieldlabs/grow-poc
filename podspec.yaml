@@ -1,12 +1,16 @@
 grow_version: ">=0.0.67"
-home: /content/pages/home.yaml
+home: /content/pages/about.yaml
 root: ""
 
 localization:
   default_locale: en
   locales:
     - en_US
-    - es_ES
+    - es_MX
+
+title@: Your Project Title
+meta:
+  google_analytics_id: "UA-XXXXXXXX-X"
 
 static_dirs:
 - static_dir: /dist/
@@ -23,14 +27,3 @@ preprocessors:
 - kind: gulp
   build_task: "build"
   run_task: "dev"
-
-# update for whatever instance you create for staging - let us know if you need
-# additional information for prod instances or setting up webreview.
-# deployments:
-#   webreview:
-#     destination: webreview
-#     server: googwebreview.appspot.com
-#     project: hw/connect
-#     name: connect-dev
-#     env:
-#       name: dev
