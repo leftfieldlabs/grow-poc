@@ -1,0 +1,19 @@
+#: /content/pages/home.yaml
+msgid "Hello, World!"
+msgstr "Bonjour le monde!"
+
+#: /content/pages/home.yaml
+msgid "Home page"
+msgstr "Page d'accueil"
+
+#: /content/pages/home.yaml
+msgid "Home page description"
+msgstr "Description de la page d'accueil"
+
+#: /content/pages/home.yaml
+msgid "We hope you enjoy this example of the Grow SDK."
+msgstr "Nous espérons que vous apprécierez cet exemple du SDK de Grow."
+
+#: /podspec.yaml
+msgid "Your Project Title"
+msgstr "Titre du projet"
