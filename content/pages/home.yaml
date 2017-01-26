@@ -1,4 +1,4 @@
-$title@: HomeGrow Localization POC and Process Workflow
+$title@: Grow Localization POC and Process Workflow
 $path: /{root}/
 $view: /views/pages/home.html
 description@: Home page description
@@ -15,3 +15,5 @@ $localization:
 
 headline@: Hello, World!
 subheadline@: We hope you enjoy this example of the Grow SDK.
+column1: This is an example of using the Grow SDK with localization, templating, and minor build processes. You may find the translations in the translations directory and the templates in the views directory.
+column2: You may find the source files such as CSS, SCSS, third-party, JavaScript, and images in the sources directory. Our develop build is sent to the dist directory when you run 'grow run'. If you'd like to build the project, enter 'grow build' in the terminal window.

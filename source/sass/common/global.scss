@@ -15,20 +15,61 @@ html{
 body{
   background: $color-standard-bkgd;
 }
+header{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 66px;
+  background: $color-lfl-gray-2;
+}
 footer{
   display: block;
   position: relative;
   width: 100%;
   height: 66px;
-  background: darkcyan;
+  background: $color-lfl-gray-2;
 }
+article{
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+}
+section{
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+}
+.copyDeck{
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+}
+.col{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 50%;
+  //height: 100%;
+  //overflow-x: hidden;
+  //background: $color-lfl-gray-1;
+  float: left;
+  padding: 5% 5% 40px 5%;
+  overflow: hidden;
+  //max-height: 100px;
+}
+.col1{
 
+}
+.col2{
+  //background: $color-lfl-teal-2;
+}
 .heroContainer{
   display: block;
   position: relative;
   width: 100%;
-  height: 66px;
-  background: darkcyan;
+  height: auto;
+  overflow: hidden;
+  background: transparent;
 }
 
 // Container for the locale selector
@@ -37,4 +78,13 @@ footer{
   position: absolute;
   top: 30px;
   right: 30px;
+  height: 20px;
+  margin: -10px 0 0 0;
+}
+
+.ratio {
+  display: block;
+  //visibility: hidden;
+  width: 100%;
+  height: auto;
 }

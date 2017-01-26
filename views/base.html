@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta
-      name="viewport"
-      content="width=device-width,
+            name="viewport"
+            content="width=device-width,
         initial-scale=1.0,
         maximum-scale=1.0,
         user-scalable=0,
         height=device-height">
     <meta
-      property="og:title"
-      content="{% if globals.title %}{{globals.title}}{% endif %}">
+            property="og:title"
+            content="{% if globals.title %}{{globals.title}}{% endif %}">
     {% if doc.meta.description %}
     <meta name="description" content="{{doc.meta.description}}">
     {% endif %}
@@ -30,32 +30,32 @@
     <meta property="og:image" content="{{podspec.meta.social_url}}" />
     <title>
       {% if doc.title %}
-        {{doc.title}}
+      {{doc.title}}
       {% else %}
-        {{globals.title}}
+      {{globals.title}}
       {% endif %}
     </title>
     <link
-      rel="stylesheet"
-      href="{{g.static('/dist/css/main.min.css').url.path}}">
+            rel="stylesheet"
+            href="{{g.static('/dist/css/main.min.css').url.path}}">
   </head>
   <body>
     {% include "/views/partials/header.html" %}
-    <div>
-      {% block main %}
-      {% endblock %}
-    </div>
+
+    {% block main %}
+    {% endblock %}
+
     {% include "/views/partials/footer.html" %}
     <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
     <script
-      src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js"
-      async>
+            src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js"
+            async>
     </script>
     <script src="{{g.static('/dist/js/main.min.js').url.path}}"></script>
     <script>
-      var gaTracker = new gweb.analytics.AutoTrack(
-        {profile: '{{podspec.meta.google_analytics_id}}'}
-      );
+		var gaTracker = new gweb.analytics.AutoTrack(
+			{profile: '{{podspec.meta.google_analytics_id}}'}
+		);
     </script>
   </body>
 </html>
