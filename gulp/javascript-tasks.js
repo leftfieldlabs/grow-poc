@@ -118,12 +118,12 @@ gulp.task('lint', function() {
       fileName: 'main.min.js'
     }))
     .pipe(sourcemaps.write(PATHS.JS_OUT_DIR))
-    .pipe(gulp.dest(PATHS.JS_OUT_DIR))
-    .pipe(notify({
-      message : "Closure Compilation Complete",
-      title : 'Gulp Notification',
-      onLast : true
-    }));
+    .pipe(gulp.dest(PATHS.JS_OUT_DIR));
+    // .pipe(notify({
+    //   message : "Closure Compilation Complete",
+    //   title : 'Gulp Notification',
+    //   onLast : true
+    // }));
   });
 
 

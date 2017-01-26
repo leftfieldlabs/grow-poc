@@ -56,3 +56,4 @@ dist/
 /src/node_modules/*
 bower_components/
 assets
+build

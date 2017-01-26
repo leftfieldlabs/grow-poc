@@ -20,12 +20,12 @@ gulp.task('sass', function() {
         outputStyle: 'compressed'
     }))
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest(PATHS.CSS_OUT_DIR))
-    .pipe(notify({
-        message : "SASS Compilation Complete",
-        title : 'Gulp Notification',
-        onLast : true
-    }));
+    .pipe(gulp.dest(PATHS.CSS_OUT_DIR));
+    // .pipe(notify({
+    //     message : "SASS Compilation Complete",
+    //     title : 'Gulp Notification',
+    //     onLast : false
+    // }));
 });
 
 
