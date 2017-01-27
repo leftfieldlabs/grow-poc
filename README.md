@@ -1,4 +1,4 @@
-[![Left Field Labs website](http://www.leftfieldlabs.com/assets/images/logo-main.png)](http://www.leftfieldlabs.com)
+[![Left Field Labs website](http://www.leftfieldlabs.com/assets/images/logo-main-inverted_2x.png)](http://www.leftfieldlabs.com)
 
 # Grow Localization POC and Process Workflow
 
@@ -29,7 +29,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 ### Node.js install
 We use Node.js to run various project build tasks, install dependencies, and supplemental utilities. You may install Node.js by downloading an installer or by using a binaries to compile it yourself. Visit their download page and choose your preferred method or simply install using Homebrew:  
 
-#### Method 1: Homebrew (leave off -g flag if you do not want to install globally, globally recommended for project-to-project convenience)
+#### Method 1: Homebrew (you may leave off the -g flag if you do not want to install Homebrew globally)
 ```sh
 $ brew install node -g
 ```  
