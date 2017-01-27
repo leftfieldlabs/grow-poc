@@ -57,3 +57,4 @@ dist/
 bower_components/
 assets
 build
+/main.min.js

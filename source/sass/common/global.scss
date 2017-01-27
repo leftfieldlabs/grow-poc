@@ -56,13 +56,18 @@ section{
   padding: 5% 5% 40px 5%;
   overflow: hidden;
   //max-height: 100px;
-}
-.col1{
+  .col1{
 
+  }
+  .col2{
+    //background: $color-lfl-teal-2;
+  }
+  @media #{$mobile} {
+    width: 100% !important;
+    float: none;
+  }
 }
-.col2{
-  //background: $color-lfl-teal-2;
-}
+
 .heroContainer{
   display: block;
   position: relative;

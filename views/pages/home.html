@@ -1,18 +1,23 @@
 {% extends "/views/base.html"%}
 {% block main %}
-<div class="heroContainer">
-	<img class="ratio" srcset="{{g.static('/source/images/home_hero_d.png').url.path}} 1x, {{g.static('/source/images/home_hero_d.png').url.path}} 2x" alt="" />
+<div id="home">
+	<div class="heroContainer">
+		<img class="ratio" srcset="{{g.static('/source/images/home_hero_d.png').url.path}} 1x, {{g.static('/source/images/home_hero_d.png').url.path}} 2x" alt="" />
+	</div>
+	<article>
+		<section class="copyDeck">
+			<header>
+				<h1>{{_(doc.headline)}}</h1>
+				<h6>{{_(doc.subheadline)}}</h6>
+			</header>
+			<div class="col col1">
+
+				<p>{{_(doc.column1)}}</p>
+			</div>
+			<div class="col col2">
+				<p>{{_(doc.column2)}}</p>
+			</div>
+		</section>
+	</article>
 </div>
-<article>
-	<section class="copyDeck">
-		<h1>{{_(doc.headline)}}</h1>
-		<div class="col col1">
-			<h6>{{_(doc.subheadline)}}</h6>
-			<p>{{_(doc.column1)}}</p>
-		</div>
-		<div class="col col2">
-			<p>{{_(doc.column2)}}</p>
-		</div>
-	</section>
-</article>
 {% endblock main %}

@@ -1,4 +1,4 @@
-[![Left Field Labs website](http://www.leftfieldlabs.com/assets/images/logo-main-inverted.png)](http://www.leftfieldlabs.com)
+[![Left Field Labs website](http://www.leftfieldlabs.com/assets/images/logo-main.png)](http://www.leftfieldlabs.com)
 
 # Grow Localization POC and Process Workflow
 
