@@ -58,3 +58,4 @@ bower_components/
 assets
 build
 /main.min.js
+translations/**/*.mo

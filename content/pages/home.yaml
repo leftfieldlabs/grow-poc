@@ -15,5 +15,5 @@ $localization:
 
 headline@: Hello, World!
 subheadline@: We hope you enjoy this example of the Grow SDK.
-column1: This is an example of using the Grow SDK with localization, templating, and minor build processes. You may find the translations in the translations directory and the templates in the views directory.
-column2: You may find the source files such as CSS, SCSS, third-party, JavaScript, and images in the sources directory. Our develop build is sent to the dist directory when you run 'grow run'. If you'd like to build the project, enter 'grow build' in the terminal window.
+column1@: This is example illustrates how to use the Grow SDK's localization, templating, and minor build processes capabilities. You may find the language translations in the directory marked translations while the templates are located in the views directory.
+column2@: All source files, such as images, JavaScript, SCSS, and third-party libraries can be found in the source directory under their respective directories. Our develop gets published to the dist directory when you run 'grow run'. If you'd like to build the project, enter 'grow build' in the terminal window.

@@ -14,6 +14,10 @@ msgstr "Description de la page d'accueil"
 msgid "We hope you enjoy this example of the Grow SDK."
 msgstr "Nous espérons que vous apprécierez cet exemple du SDK de Grow."
 
-#: /podspec.yaml
-msgid "Your Project Title"
-msgstr "Titre du projet"
+#: /content/pages/home.yaml
+msgid "This is example illustrates how to use the Grow SDK's localization, templating, and minor build processes capabilities. You may find the language translations in the directory marked translations while the templates are located in the views directory."
+msgstr "Cet exemple illustre comment utiliser les fonctionnalités de localisation, de modélisation et de construction mineure du SDK de Grow. Vous pouvez trouver les traductions dans le répertoire de traductions marquées tandis que les modèles sont situés dans le répertoire views."
+
+#: /content/pages/home.yaml
+msgid "All source files, such as images, JavaScript, SCSS, and third-party libraries can be found in the source directory under their respective directories. Our develop gets published to the dist directory when you run 'grow run'. If you'd like to build the project, enter 'grow build' in the terminal window."
+msgstr "Tous les fichiers source, tels que les images, JavaScript, SCSS et les bibliothèques tierces, se trouvent dans le répertoire source sous leurs répertoires respectifs. Notre développement est publié dans le répertoire dist lorsque vous exécutez 'grow run'. Si vous souhaitez créer le projet, entrez 'grow build' dans la fenêtre du terminal."

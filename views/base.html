@@ -1,5 +1,4 @@
 {% set globals=g.yaml("/content/globals.yaml")%}
-
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
   <head>
@@ -35,6 +34,7 @@
       {{globals.title}}
       {% endif %}
     </title>
+    <link rel="icon" type="image/png" href="http://www.leftfieldlabs.com/favicon-32x32.png" sizes="32x32">
     <link
             rel="stylesheet"
             href="{{g.static('/dist/css/main.min.css').url.path}}">
